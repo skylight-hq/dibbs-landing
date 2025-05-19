@@ -16,7 +16,7 @@ Application will be available in `http://localhost:3000`.
 
 ### pre-commit hook
 
-This project uses `lefthook` to trigger linting fixes on commit. As part of the local development setup install [lefthook](https://lefthook.dev/installation/index.html) in yout local and run below command at the root:
+This project uses `lefthook` to trigger linting fixes on commit. As part of the local development setup install [lefthook](https://lefthook.dev/installation/index.html) in your local and run below command at the root:
 
 `lefthook install`
 
@@ -26,7 +26,7 @@ To obtain the static assets run command:
 
 `npm run build`
 
-Assets will be available in the `out` folder at the root of the project. To see how the static assets look like install `http-server` and run command:
+Assets will be available in the `out` folder at the root of the project. To see how the static assets look like install [http-server](https://www.npmjs.com/package/http-server) and run command:
 
 `http-server out`
 
