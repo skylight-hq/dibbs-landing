@@ -1,0 +1,15 @@
+.dibbsHeading {
+    margin-top: 32px;
+
+    @media (width >= 64em) {
+      margin-top: 64px;
+    }
+  }
+
+.cardContainer {
+  gap: 36px;
+
+  @media (width >= 64em) {
+    gap: 48px;
+  }
+}

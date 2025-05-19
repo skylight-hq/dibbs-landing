@@ -1,0 +1,39 @@
+@use "../../styles/variables.scss" as *;
+
+.wrapper {
+  background:
+    linear-gradient(90deg, #0081a1 2%, #005ea2 50%, #4c2b64 96%),
+    url("../../../public/images/footer-bg-min.jpg")
+      lightgray -7.128px -284.339px / 123.317% 245.285% no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: multiply, soft-light;
+  font-size: 14px;
+
+  @media (width >= 40em) {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+
+    @media (width >= 40em) {
+      font-size: 22px;
+    }
+  }
+
+  a,
+  a:visited {
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+    font-size: 14px;
+
+    @media (width >= 40em) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 0 2px $blue-cool-blue-cool-20;
+      color: $blue-cool-blue-cool-20;
+    }
+  }
+}

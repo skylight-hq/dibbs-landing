@@ -1,0 +1,14 @@
+@use "../../styles/variables.scss" as *;
+
+.wrapper{
+   background:
+    linear-gradient(90deg, #4c2b64 12%, #005ea2 50%, #0081a1 98%), url("../../../public/images/hero-bg-min.jpg")
+      lightgray -7.128px -326.826px / 123.317% 229.707% no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: multiply, multiply, soft-light;
+}
+
+.logo {
+  font-size: 1.5rem;
+  width: fit-content;
+}

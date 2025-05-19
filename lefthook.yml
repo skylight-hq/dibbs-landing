@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    frontend-code-checks:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: "./node_modules/.bin/eslint --fix {staged_files} && ./node_modules/.bin/prettier --write {staged_files} && git add {staged_files}"
+    frontend-style-checks:
+      glob: "*.scss"
+      run: "./node_modules/.bin/prettier --write {staged_files} && git add {staged_files}"
