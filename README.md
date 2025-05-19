@@ -14,6 +14,12 @@ Start the application in watch mode and hot reload with command:
 
 Application will be available in `http://localhost:3000`.
 
+### pre-commit hook
+
+This project uses `lefthook` to trigger linting fixes on commit. As part of the local development setup install [lefthook](https://lefthook.dev/installation/index.html) in yout local and run below command at the root:
+
+`lefthook install`
+
 ## Prod deployment
 
 To obtain the static assets run command:
