@@ -6,9 +6,11 @@ NextJS application for the dibbs landing page. This project builds into a static
 
 This site (currently just one page) is implemented with the NextJS framework. Pages were built using `@uswds/uswds` and `@trussworks/react-uswds`. The USWDS settings have been adjusted with the DIBBs design system palette.
 
-You will need `node v20+` installed.
-
 ## Local development
+
+You will need `node v20+` installed. To install app dependencies run command:
+
+`npm install`
 
 Start the application in watch mode and hot reload with command:
 
