@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         <h1 className="text-white font-family-heading desktop:grid-col-7 grid-col-12">
           Improve the way your jurisdiction collects, processes, and views public health data
         </h1>
-        <p className="text-thin desktop:grid-col-9 grid-col-12">
+        <p className="text-thin desktop:grid-col-10 grid-col-12">
           Turn your jurisdiction&apos;s data into meaningful intelligence that drives
           timely public health action using CDC&apos;s free, cloud-based products built from Data
           Integration Building Blocks, or DIBBs.
