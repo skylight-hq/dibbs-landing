@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
-import ReactDOM from "react-dom";
 import headerBg from "../../public/images/hero-bg-min.jpg";
 import Image from "next/image";
 
