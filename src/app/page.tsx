@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             demoLink={PAGES.QUERY_CONNECTOR}
             githubLink={PAGES.QUERY_CONNECTOR_REPO}
             reverseImage
-            credentials={{ username: "demo", password: "demo" }}
+            credentials={{ username: "mario", password: "super-admin" }}
           />
           <Card
             title="Record Linker"
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
           />
           <Card
             title="eCR Viewer"
-            description="Makes it easier for public health staff to find relevant information in eCR documents. It combines both the eICR and RR records into a single view and highlights relevant lab or clinical information for conditions present in the eCR."
+            description="Makes it easier for public health staff to find relevant information in eCR documents. It combines both the eICR and RR records into a single view and highlights relevant lab or clinical information for conditions present in the eCR. This demo is best viewed on desktop."
             image={
               <Image
                 className={classNames(cardImgClasses)}
