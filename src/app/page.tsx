@@ -77,6 +77,7 @@ const Home: React.FC = () => {
             demoLink={PAGES.ECR_VIEWER}
             githubLink={PAGES.ECR_VIEWER_REPO}
             bgColor={BgColorType.PURPLE}
+            credentials={{ username: "demo", password: "demo" }}
           />
           <Card
             title="eCR Refiner"
@@ -91,7 +92,6 @@ const Home: React.FC = () => {
             }
             demoLink={PAGES.ECR_REFINER}
             githubLink={PAGES.ECR_REFINER_REPO}
-            credentials={{ username: "demo", password: "demo" }}
           />
         </div>
       </div>
