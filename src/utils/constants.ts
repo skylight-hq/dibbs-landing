@@ -11,4 +11,9 @@ export const PAGES = {
   RECORD_LINKER_REPO: "https://github.com/CDCgov/RecordLinker",
   ECR_VIEWER_REPO: "https://github.com/CDCgov/dibbs-ecr-viewer",
   ECR_REFINER_REPO: "https://github.com/CDCgov/dibbs-ecr-refiner",
+  // credentials
+  QUERY_CONNECTOR_USERNAME: "mario",
+  QUERY_CONNECTOR_PASSWORD: "super-admin",
+  ECR_VIEWER_USERNAME: "viewer_demo@dibbs.tools",
+  ECR_VIEWER_PASSWORD: "4TJfmo416Jws",
 };

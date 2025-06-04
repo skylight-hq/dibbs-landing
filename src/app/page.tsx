@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             demoLink={PAGES.QUERY_CONNECTOR}
             githubLink={PAGES.QUERY_CONNECTOR_REPO}
             reverseImage
-            credentials={{ username: "mario", password: "super-admin" }}
+            credentials={{ username: PAGES.QUERY_CONNECTOR_USERNAME, password: PAGES.QUERY_CONNECTOR_PASSWORD }}
           />
           <Card
             title="Record Linker"
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
             demoLink={PAGES.ECR_VIEWER}
             githubLink={PAGES.ECR_VIEWER_REPO}
             bgColor={BgColorType.PURPLE}
-            credentials={{ username: "viewer_demo@dibbs.tools", password: "4TJfmo416Jws" }}
+            credentials={{ username: PAGES.ECR_VIEWER_USERNAME, password: PAGES.ECR_VIEWER_PASSWORD }}
           />
           <Card
             title="eCR Refiner"
