@@ -96,11 +96,11 @@ const Card: React.FC<CardProps> = ({
             <p className="grid-col-10 tablet:grid-col-12 desktop:grid-col-12 text-accent-cool text-medium text-italic">
               Access to this demo requires login credentials:
             </p>
-            <p className="grid-col-8 tablet:grid-col-12 desktop:grid-col-12 text-accent-cool text-medium">
+            <p className="grid-col-10 tablet:grid-col-12 desktop:grid-col-12 text-accent-cool text-medium">
               <span className="text-normal">Username: </span>
-              <span className="text-semibold">demo</span>{" "}
+              <span className="text-semibold">{credentials.username}</span>{" "}
               <span className="text-normal">Password: </span>
-              <span className="text-semibold">demo</span>
+              <span className="text-semibold">{credentials.password}</span>
             </p>
           </div>
         )}
