@@ -1,7 +1,7 @@
 export const PAGES = {
   LANDING: "/",
   // demo urls
-  ECR_VIEWER: "https://viewer.dibbs.tools/ecr-viewer",
+  ECR_VIEWER: "https://viewer.dibbs.tools/ecr-viewer?dateRange=last-year",
   ECR_REFINER: "https://refiner.dibbs.tools",
   QUERY_CONNECTOR: "https://connector.dibbs.tools",
   SIMPLE_REPORT: "https://demo.simplereport.gov/app/pilot/report",
