@@ -93,6 +93,21 @@ const Home: React.FC = () => {
             demoLink={PAGES.ECR_REFINER}
             githubLink={PAGES.ECR_REFINER_REPO}
           />
+          <Card
+            title="Text to Code"
+            description="Makes it easier for public health staff to find relevant information in eCR documents. It combines both the eICR and RR records into a single view and highlights relevant lab or clinical information for conditions present in the eCR. This demo is best viewed on desktop."
+            // image={
+            //   <Image
+            //     className={classNames(cardImgClasses)}
+            //     alt=""
+            //     src={TextToCodeImg} // There is currently no TTC image; we'll have to get a designer for this
+            //     fill
+            //   />
+            // }
+            // demoLink={PAGES.TEXT_TO_CODE}
+            githubLink={PAGES.TEXT_TO_CODE_REPO}
+            bgColor={BgColorType.PURPLE}
+          />
         </div>
       </div>
       <Subfooter />
