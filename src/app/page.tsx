@@ -6,6 +6,7 @@ import QueryConnectorImg from "../../public/images/query-connector-img.svg";
 import RecordLinkerImg from "../../public/images/record-linker-img.svg";
 import ECRViewerImg from "../../public/images/ecr-viewer-img.svg";
 import ECRRefinerImg from "../../public/images/ecr-refiner-img.svg";
+import TextToCodeImg from "../../public/images/text-to-code-img.svg";
 import HomeStyle from "./home.module.scss";
 import "../styles/index.scss";
 import Image from "next/image";
@@ -96,14 +97,13 @@ const Home: React.FC = () => {
           <Card
             title="Text to Code"
             description="Makes it easier for public health staff to find relevant information in eCR documents. It combines both the eICR and RR records into a single view and highlights relevant lab or clinical information for conditions present in the eCR. This demo is best viewed on desktop."
-            // image={
-            //   <Image
-            //     className={classNames(cardImgClasses)}
-            //     alt=""
-            //     src={TextToCodeImg} // There is currently no TTC image; we'll have to get a designer for this
-            //     fill
-            //   />
-            // }
+            image={
+              <Image
+                className={classNames(cardImgClasses)}
+                alt=""
+                src={TextToCodeImg}
+              />
+            }
             // demoLink={PAGES.TEXT_TO_CODE}
             githubLink={PAGES.TEXT_TO_CODE_REPO}
             bgColor={BgColorType.PURPLE}
