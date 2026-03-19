@@ -1,26 +1,11 @@
 name: Trigger Deploy to Demo
-run-name: Trigger Deploy ${{ inputs.version }} to Demo by @${{ github.actor }}
+run-name: Trigger Deploy by @${{ github.actor }}
 
 on:
   workflow_dispatch:
-    inputs:
-      service:
-        type: string
-        description: "The service you want to deploy. dibbs-landing"
-        required: true
-        default: dibbs-landing
-      version:
-        type: string
-        description: "The version to deploy. Example: v2.6.0 or main"
-        required: true
-        default: main
-      event_type:
-        type: choice
-        options:
-          - trigger-demo-plan
-          - trigger-demo-deploy
-        description: "The event type to trigger the workflow."
-        required: true
+
+permissions:
+  contents: read
 
 jobs:
   trigger_demo_workflow:
@@ -30,9 +15,9 @@ jobs:
         run: |
           repo_owner="skylight-hq"
           repo_name="dibbs-tf-envs"
-          event_type=${{ github.event.inputs.event_type }}
-          service="${{ github.event.inputs.service }}"
-          version="${{ github.event.inputs.version }}"
+          event_type="trigger-demo-deploy"
+          service="dibbs-landing"
+          version="main"
           response="$(curl -L -w '%{http_code}\n' -o /dev/null \
             -X POST \
             -H "Accept: application/vnd.github+json" \
@@ -46,5 +31,3 @@ jobs:
           fi
           echo "View your workflow run at: https://github.com/skylight-hq/dibbs-tf-envs/actions"
           echo "Successfully triggered the workflow."
-          echo "Service: $service"
-          echo "Version: $version"
