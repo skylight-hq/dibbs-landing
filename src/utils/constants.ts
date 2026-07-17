@@ -4,7 +4,6 @@ export const PAGES = {
   ECR_VIEWER: "https://viewer.dibbs.tools/ecr-viewer?dateRange=last-year",
   ECR_REFINER: "https://refiner.dibbs.tools",
   QUERY_CONNECTOR: "https://connector.dibbs.tools",
-  SIMPLE_REPORT: "https://demo.simplereport.gov/app/pilot/report",
   RECORD_LINKER: "https://linker.dibbs.tools",
   // repo urls
   QUERY_CONNECTOR_REPO: "https://github.com/CDCgov/dibbs-query-connector",
