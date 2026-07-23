@@ -6,11 +6,12 @@ import QueryConnectorImg from "../../public/images/query-connector-img.svg";
 import RecordLinkerImg from "../../public/images/record-linker-img.svg";
 import ECRViewerImg from "../../public/images/ecr-viewer-img.svg";
 import ECRRefinerImg from "../../public/images/ecr-refiner-img.svg";
+import TextToCodeImg from "../../public/images/text-to-code-img.svg";
 import HomeStyle from "./home.module.scss";
 import "../styles/index.scss";
 import Image from "next/image";
 
-const cardImgClasses = ["padding-top-3","padding-left-2","padding-right-1"];
+const cardImgClasses = ["padding-top-3", "padding-left-2", "padding-right-1"];
 
 const Home: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ const Home: React.FC = () => {
             "grid-row",
             "flex-column",
             "flex-align-center",
-            HomeStyle.cardContainer
+            HomeStyle.cardContainer,
           )}
         >
           <Card
@@ -45,7 +46,10 @@ const Home: React.FC = () => {
             demoLink={PAGES.QUERY_CONNECTOR}
             githubLink={PAGES.QUERY_CONNECTOR_REPO}
             reverseImage
-            credentials={{ username: PAGES.QUERY_CONNECTOR_USERNAME, password: PAGES.QUERY_CONNECTOR_PASSWORD }}
+            credentials={{
+              username: PAGES.QUERY_CONNECTOR_USERNAME,
+              password: PAGES.QUERY_CONNECTOR_PASSWORD,
+            }}
           />
           <Card
             title="Record Linker"
@@ -77,7 +81,10 @@ const Home: React.FC = () => {
             demoLink={PAGES.ECR_VIEWER}
             githubLink={PAGES.ECR_VIEWER_REPO}
             bgColor={BgColorType.PURPLE}
-            credentials={{ username: PAGES.ECR_VIEWER_USERNAME, password: PAGES.ECR_VIEWER_PASSWORD }}
+            credentials={{
+              username: PAGES.ECR_VIEWER_USERNAME,
+              password: PAGES.ECR_VIEWER_PASSWORD,
+            }}
           />
           <Card
             title="eCR Refiner"
@@ -92,6 +99,20 @@ const Home: React.FC = () => {
             }
             demoLink={PAGES.ECR_REFINER}
             githubLink={PAGES.ECR_REFINER_REPO}
+          />
+          <Card
+            title="Text to Code"
+            description="Maps nonstandard data in electronic initial case reports (eICRs) to standardized codes, improving reportability decisions and enabling jurisdictions to receive standardized data for use in their workflows. "
+            image={
+              <Image
+                className={classNames(cardImgClasses)}
+                alt=""
+                src={TextToCodeImg}
+              />
+            }
+            demoLink={PAGES.TEXT_TO_CODE}
+            githubLink={PAGES.TEXT_TO_CODE_REPO}
+            bgColor={BgColorType.PURPLE}
           />
         </div>
       </div>

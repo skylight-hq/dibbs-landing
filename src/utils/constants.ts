@@ -5,11 +5,13 @@ export const PAGES = {
   ECR_REFINER: "https://refiner.dibbs.tools",
   QUERY_CONNECTOR: "https://connector.dibbs.tools",
   RECORD_LINKER: "https://linker.dibbs.tools",
+  TEXT_TO_CODE: "https://ttc.dibbs.tools",
   // repo urls
   QUERY_CONNECTOR_REPO: "https://github.com/CDCgov/dibbs-query-connector",
   RECORD_LINKER_REPO: "https://github.com/CDCgov/RecordLinker",
   ECR_VIEWER_REPO: "https://github.com/CDCgov/dibbs-ecr-viewer",
   ECR_REFINER_REPO: "https://github.com/CDCgov/dibbs-ecr-refiner",
+  TEXT_TO_CODE_REPO: "https://github.com/CDCgov/dibbs-text-to-code",
   // credentials
   QUERY_CONNECTOR_USERNAME: "mario@dibbs.tools",
   QUERY_CONNECTOR_PASSWORD: "Nye6KpjgkHWT",
