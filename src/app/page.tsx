@@ -11,7 +11,7 @@ import HomeStyle from "./home.module.scss";
 import "../styles/index.scss";
 import Image from "next/image";
 
-const cardImgClasses = ["padding-top-3","padding-left-2","padding-right-1"];
+const cardImgClasses = ["padding-top-3", "padding-left-2", "padding-right-1"];
 
 const Home: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
             "grid-row",
             "flex-column",
             "flex-align-center",
-            HomeStyle.cardContainer
+            HomeStyle.cardContainer,
           )}
         >
           <Card
@@ -46,7 +46,10 @@ const Home: React.FC = () => {
             demoLink={PAGES.QUERY_CONNECTOR}
             githubLink={PAGES.QUERY_CONNECTOR_REPO}
             reverseImage
-            credentials={{ username: PAGES.QUERY_CONNECTOR_USERNAME, password: PAGES.QUERY_CONNECTOR_PASSWORD }}
+            credentials={{
+              username: PAGES.QUERY_CONNECTOR_USERNAME,
+              password: PAGES.QUERY_CONNECTOR_PASSWORD,
+            }}
           />
           <Card
             title="Record Linker"
@@ -78,7 +81,10 @@ const Home: React.FC = () => {
             demoLink={PAGES.ECR_VIEWER}
             githubLink={PAGES.ECR_VIEWER_REPO}
             bgColor={BgColorType.PURPLE}
-            credentials={{ username: PAGES.ECR_VIEWER_USERNAME, password: PAGES.ECR_VIEWER_PASSWORD }}
+            credentials={{
+              username: PAGES.ECR_VIEWER_USERNAME,
+              password: PAGES.ECR_VIEWER_PASSWORD,
+            }}
           />
           <Card
             title="eCR Refiner"
@@ -96,7 +102,7 @@ const Home: React.FC = () => {
           />
           <Card
             title="Text to Code"
-            description="Makes it easier for public health staff to find relevant information in eCR documents. It combines both the eICR and RR records into a single view and highlights relevant lab or clinical information for conditions present in the eCR. This demo is best viewed on desktop."
+            description="Maps nonstandard data in electronic initial case reports (eICRs) to standardized codes, improving reportability decisions and enabling jurisdictions to receive standardized data for use  in their workflows. "
             image={
               <Image
                 className={classNames(cardImgClasses)}
@@ -104,7 +110,7 @@ const Home: React.FC = () => {
                 src={TextToCodeImg}
               />
             }
-            // demoLink={PAGES.TEXT_TO_CODE}
+            demoLink={PAGES.TEXT_TO_CODE}
             githubLink={PAGES.TEXT_TO_CODE_REPO}
             bgColor={BgColorType.PURPLE}
           />
