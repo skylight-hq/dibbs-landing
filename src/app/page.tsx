@@ -102,7 +102,7 @@ const Home: React.FC = () => {
           />
           <Card
             title="Text to Code"
-            description="Maps nonstandard data in electronic initial case reports (eICRs) to standardized codes, improving reportability decisions and enabling jurisdictions to receive standardized data for use  in their workflows. "
+            description="Maps nonstandard data in electronic initial case reports (eICRs) to standardized codes, improving reportability decisions and enabling jurisdictions to receive standardized data for use in their workflows. "
             image={
               <Image
                 className={classNames(cardImgClasses)}
